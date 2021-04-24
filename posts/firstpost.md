@@ -1,7 +1,9 @@
 ---
-layout: layout.liquid
+layout: layout/post.liquid
 date: 2021-04-23
-tags: ['blog', '11ty']
+tags:
+  - blog
+  -
 title: Playing around with 11ty
 ---
 # {{ title }}

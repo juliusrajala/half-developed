@@ -1,0 +1,52 @@
+:root {
+  --content-width: 700px;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+ul, ol, li {
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+main > * {
+  max-width: min(var(--content-width), 100%);
+}
+
+article {
+  padding: 1rem 0rem;
+}
