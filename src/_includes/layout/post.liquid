@@ -3,14 +3,24 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Halfdeveloped: {{title}}</title>
+  <title>{{title}}</title>
   <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/defaults.css">
   <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/assets/css/blog.css">
 </head>
 
 <body>
-  {{ content }}
+  <main>
+    <article>
+      <h1>{{title}}</h1>
+      <div class="post-meta">
+        <span>{{date}}</span>
+        <span>{{date}}</span>
+      </div>
+      {{ content }}
+    </article>
+  </main>
 </body>
 
 </html>
