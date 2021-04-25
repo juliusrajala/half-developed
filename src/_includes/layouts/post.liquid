@@ -3,26 +3,29 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Halfdeveloped: Half-developed</title>
+  <title>{{title}}</title>
   <link rel="stylesheet" type="text/css" href="/css/reset.css">
   <link rel="stylesheet" type="text/css" href="/css/defaults.css">
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <link rel="stylesheet" type="text/css" href="/css/blog.css">
 </head>
 
 <body>
   <header class="hdcom-site-header">
     <nav>
-      <ul><li><a href="/">Home</a></li>
-<li><a href="/posts/">Posts</a></li>
-<li><a href="/about/">Lore</a></li></ul>
+      {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
     </nav>
   </header>
-
   <main>
     <section>
-      <h1>Welcome to Half-Developed</h1>
-<p>A tech blog exploring web-things, unfinished projects and other topics of interest.</p>
-
+      <h1>{{title}}</h1>
+      <div class="hdcom-post-meta">
+        <span>Released: {{date | dateReadable }}</span>
+        <span>Edited: {{date | buildDate }}</span>
+      </div>
+      <article>
+        {{ content }}
+      </article>
     </section>
   </main>
 </body>

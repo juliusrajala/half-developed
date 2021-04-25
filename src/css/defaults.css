@@ -1,0 +1,142 @@
+@font-face {
+  font-family: "Lora";
+  src: local("Lora-Medium"),
+       url("/assets/fonts/Lora-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Lora Bold";
+  src: local("Lora-Bold"),
+       url("/assets/fonts/Lora-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Lora Light";
+  src: local("Lora-Regular"),
+       url("/assets/fonts/Lora-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: local("SpaceGrotesk-Regular"),
+       url("/assets/fonts/SpaceGrotesk-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Space Grotesk Bold";
+  src: local("SpaceGrotesk-Bold"),
+       url("/assets/fonts/SpaceGrotesk-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Space Grotesk Light";
+  src: local("SpaceGrotesk-Light"),
+       url("/assets/fonts/SpaceGrotesk-Light.ttf");
+}
+
+:root {
+  --content-width: 700px;
+  --color-bg: #fffbfe;
+  --color-yellow: #ffd151;
+  --color-gray: #383F51;
+  --color-blue: #3C4F76;
+  --color-black: #303030;
+  --border-radius: 4px;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-gray);
+  font-family: 'Lora', serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  list-style: initial;
+  list-style-position: inside;
+  font-family: 'Space Grotesk', sans-serif;
+  margin-bottom: 1rem;
+}
+
+li > ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+em {
+  font-style: italic;
+}
+
+h1, h2, h3, h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: var(--border-radius);
+  font-family: 'Space Grotesk', sans-serif;
+  display: inline-block;
+  padding: 0.25rem;
+}
+
+h1 {
+  font-family: 'Space Grotesk Bold', sans-serif;
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: 'Space Grotesk Bold', sans-serif;
+  font-size: 1.6rem;
+  background: var(--color-yellow);
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+main > * {
+  max-width: min(var(--content-width), 100%);
+}
+
+article {
+  padding: 1rem 0rem;
+}
+
+p > code {
+  font-family: monospace;
+  font-size: 0.9rem;
+  padding: 0 0.125rem;
+  background: var(--color-blue);
+  color: var(--color-bg);
+  border-radius: var(--border-radius);
+}
+
+pre > code {
+  display: block;
+  padding: 1rem;
+  font-family: monospace;
+  line-height: 1.5;
+  background: var(--color-blue);
+  color: var(--color-yellow);
+  border-radius: var(--border-radius);
+}
+

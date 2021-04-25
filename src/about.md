@@ -2,11 +2,11 @@
 layout: layouts/layout.liquid
 title: Half-developed
 eleventyNavigation:
-  key: Home
-  order: 1
+  key: Lore
+  order: 3
 
 ---
 
-# Welcome to Half-Developed
+# About Half-Developed and the author
 
 A tech blog exploring web-things, unfinished projects and other topics of interest.

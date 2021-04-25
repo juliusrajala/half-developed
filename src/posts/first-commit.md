@@ -1,9 +1,8 @@
 ---
-layout: layout/post.liquid
+layout: layouts/post.liquid
 date: 2021-04-23
-tags:
-  - blog
-  -
+tags: ['post']
+icon: 🛠
 title: Setting up a blog-site using 11ty, first impressions
 ---
 
@@ -19,15 +18,20 @@ So here's for firsts, building my own blog-site and writing it's first post.
 
 Going for a static website generator seemed like a pretty good choise for a blog site. But there's an abundance of technologies.
 
-Following the twitter tech-sphere, I've happened upon this neat little build tool called [11ty](https://www.11ty.dev) quite a few times as of late, so I figured it's worth a look.
+I gathered together a list of some of the requirements I had with regards to the technologies used.
 
-I set out for this task with a couple of restrictions at mind:
+### Requirements:
 
-- [ ] I want to be able to write the posts in my editor, using markdown.
-- [ ] Development environment should be pretty simple.
-- [ ] No hassle or a lot of javascript (one that I need to write, anyway)
+- Posts should be written in markdown format due to familiarity with the platform.
+- Development environment should be:
+  - Simple
+  - Snappy
+  - Comfortable, ie. Hot reload,
+- Low amount of JavaScript *(That I need to write)*
 
-11ty checked all of my boxes, so we've got our technology core right here.
+### Enter 11ty
+
+Following the twitter tech-sphere, I've happened upon this neat little build tool called [11ty](https://www.11ty.dev) quite a few times as of late, so I figured it's worth a look. 11ty also checks all of my boxes above, so I figured this is as good a time as any to give it a go.
 
 There's actually a fairly good number of pre-made 11ty templates available for something like this. They're definitely worth checking out and will likely give you a nice running start.
 
@@ -53,6 +57,8 @@ We'll be looking at the simplest possible configuration in the next section.
 
 Setting up asset building proved to be a relatively straight-forward task.
 
+The following snippet is an example of my original `.eleventy.js` set-up. The eleventyConfig received as a parameter provides a bunch of different methods to include extra functionality to your 11ty-configuration.
+
 ```javascript
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('assets');
@@ -63,7 +69,7 @@ module.exports = function (eleventyConfig) {
 
 I figured out this is something I can set up later, so the initial implementation includes simple handling for inline-code and code-blocks.
 
-## Wins and challenges
+## Challenges and wins
 
 Working without hefty JavaScript frameworks has its highs and lows. When things get complicated, you usually end up being leaps and bounds more productive. Frameworks provide useful and easy abstractions for developers to tackle common issues.
 
@@ -80,4 +86,5 @@ It's pretty refreshing to mainly concern yourself with the css and html side of 
 An unexpected brain-teaser caught this JavaScript developers by surprise, how do I format the datetimes for my posts in the fashion I want.
 
 
-## To sum up
+## Sum up
+

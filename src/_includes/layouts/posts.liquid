@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Halfdeveloped: Half-developed</title>
+  <title>Halfdeveloped: {{title}}</title>
   <link rel="stylesheet" type="text/css" href="/css/reset.css">
   <link rel="stylesheet" type="text/css" href="/css/defaults.css">
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
@@ -12,17 +12,22 @@
 <body>
   <header class="hdcom-site-header">
     <nav>
-      <ul><li><a href="/">Home</a></li>
-<li><a href="/posts/">Posts</a></li>
-<li><a href="/about/">Lore</a></li></ul>
+      {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
     </nav>
   </header>
 
   <main>
     <section>
-      <h1>Welcome to Half-Developed</h1>
-<p>A tech blog exploring web-things, unfinished projects and other topics of interest.</p>
-
+      {{ content }}
+    </section>
+    <section>
+      <ul>
+        {%- for post in collections.post -%}
+        <li>
+          <a href="{{ post.url | url }}">{{ post.data.title }}, {{post.date | dateReadable}}</a>
+        </li>
+        {%- endfor -%}
+      </ul>
     </section>
   </main>
 </body>
