@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>{{title}}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{icon}} {{title}}</title>
   <link rel="stylesheet" type="text/css" href="/css/reset.css">
   <link rel="stylesheet" type="text/css" href="/css/defaults.css">
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
@@ -11,17 +12,20 @@
 </head>
 
 <body>
-  <header class="hdcom-site-header">
+  <header class="hdcom-siteHeader">
+    <img src="/assets/hdlogo.png" />
     <nav>
       {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
     </nav>
   </header>
   <main>
     <section>
-      <h1>{{title}}</h1>
-      <div class="hdcom-post-meta">
-        <span>Released: {{date | dateReadable }}</span>
-        <span>Edited: {{date | buildDate }}</span>
+      <div class="hdcom-postHeader">
+        <h1>{{title}}</h1>
+      </div>
+      <div class="hdcom-postMeta">
+        <span>🗓 {{date | dateReadable }}</span>
+        <span>⌨️ {{ author }}</span>
       </div>
       <article>
         {{ content }}

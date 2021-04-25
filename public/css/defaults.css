@@ -42,12 +42,16 @@
   --color-blue: #3C4F76;
   --color-black: #303030;
   --border-radius: 4px;
+  --font-sans: 'Space Grotesk', sans-serif;
+  --font-sans-bold: 'Space Grotesk Bold', sans-serif;
+  --font-serif: 'Lora', serif;
+  --font-serif-light: 'Lora Light', serif;
 }
 
 body {
   background-color: var(--color-bg);
   color: var(--color-gray);
-  font-family: 'Lora', serif;
+  font-family: var(--font-serif);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,13 +59,16 @@ body {
 
 p {
   font-size: 1.1rem;
-  line-height: 1.5;
+  font-family: var(--font-serif-light);
+  line-height: 1.8;
   margin-bottom: 1rem;
+  text-rendering: optimizelegibility !important;
+  letter-spacing: .03em;
 }
 
 ul, ol {
   font-size: 1.1rem;
-  line-height: 1.5;
+  line-height: 1.8;
   list-style: initial;
   list-style-position: inside;
   font-family: 'Space Grotesk', sans-serif;
@@ -80,25 +87,24 @@ em {
 h1, h2, h3, h4 {
   margin-top: 1.5rem;
   margin-bottom: 1rem;
-  border-radius: var(--border-radius);
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: var(--font-sans-bold);
   display: inline-block;
-  padding: 0.25rem;
+  letter-spacing: .03em
 }
 
 h1 {
-  font-family: 'Space Grotesk Bold', sans-serif;
   font-size: 2rem;
 }
 
 h2 {
-  font-family: 'Space Grotesk Bold', sans-serif;
+  padding: 0.25rem;
   font-size: 1.6rem;
+  border-radius: var(--border-radius);
   background: var(--color-yellow);
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 h4 {
@@ -114,7 +120,7 @@ main {
 }
 
 main > * {
-  max-width: min(var(--content-width), 100%);
+  max-width: min(var(--content-width), 90vw);
 }
 
 article {
@@ -138,5 +144,7 @@ pre > code {
   background: var(--color-blue);
   color: var(--color-yellow);
   border-radius: var(--border-radius);
+  overflow: auto;
+  margin-bottom: 1rem;
 }
 

@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Setting up a blog-site using 11ty, first impressions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🛠 Setting up a blog-site using 11ty, first impressions</title>
   <link rel="stylesheet" type="text/css" href="/css/reset.css">
   <link rel="stylesheet" type="text/css" href="/css/defaults.css">
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
@@ -11,7 +12,8 @@
 </head>
 
 <body>
-  <header class="hdcom-site-header">
+  <header class="hdcom-siteHeader">
+    <img src="/assets/hdlogo.png" />
     <nav>
       <ul><li><a href="/">Home</a></li>
 <li><a href="/posts/">Posts</a></li>
@@ -20,50 +22,55 @@
   </header>
   <main>
     <section>
-      <h1>Setting up a blog-site using 11ty, first impressions</h1>
-      <div class="hdcom-post-meta">
-        <span>Released: 23.04.2021</span>
-        <span>Edited: 25.04.2021</span>
+      <div class="hdcom-postHeader">
+        <h1>Setting up a blog-site using 11ty, first impressions</h1>
+      </div>
+      <div class="hdcom-postMeta">
+        <span>🗓 23.04.2021</span>
+        <span>⌨️ Julius Rajala</span>
       </div>
       <article>
         <p>Every now and then I get this weird need to set myself up with a blog.</p>
 <p>I've always been somewhat interested in writing. Especially about technology. I just never seem to get around to actually doing it. One of the things standing in my way has been the lack of a site suited for it.</p>
-<p>No, there's no sudden shortage of blogging platforms. Rather, as a software engineer, especially one working with the web, I feel the need to build one myself.</p>
-<p>So here's for firsts, building my own blog-site and writing it's first post.</p>
+<p>No, there's no sudden shortage of blogging platforms. As a software engineer, re-inventing the wheel is part, if not all of the fun though, hence I'll steer away from the WordPress-sites and whatnots. I'm sure they're decent platforms though.</p>
 <h2>Choice of technology</h2>
-<p>Going for a static website generator seemed like a pretty good choise for a blog site. But there's an abundance of technologies.</p>
+<p>Picking a technology for your site these days is like going to the candy store. There's a lot of options.</p>
 <p>I gathered together a list of some of the requirements I had with regards to the technologies used.</p>
 <h3>Requirements:</h3>
 <ul>
 <li>Posts should be written in markdown format due to familiarity with the platform.</li>
 <li>Development environment should be:
 <ul>
-<li>Simple</li>
-<li>Snappy</li>
-<li>Comfortable, ie. Hot reload,</li>
+<li>Simple to use and set up</li>
+<li>Builds should be fast</li>
+<li>Comfortable, ie. I'd love hot reloading</li>
 </ul>
 </li>
 <li>Low amount of JavaScript <em>(That I need to write)</em></li>
 </ul>
+<p>With these specs at hand, I set out to find me the perfect technology for this site.</p>
+<p>I made a conscious decisions to avoid the technologies of the React-verse. Not that there's anything wrong with Gatsby or Next for instance. I've worked with different React-variants and applications over the last few years and enjoy any refreshments I can get from the world of <code>JSX</code>.</p>
 <h3>Enter 11ty</h3>
-<p>Following the twitter tech-sphere, I've happened upon this neat little build tool called <a href="https://www.11ty.dev">11ty</a> quite a few times as of late, so I figured it's worth a look. 11ty also checks all of my boxes above, so I figured this is as good a time as any to give it a go.</p>
+<p>Following the twitter tech-sphere, I've happened upon this neat little build tool called <a href="https://www.11ty.dev">11ty</a> quite a few times as of late, so I figured it's worth a look.</p>
+<p>A short inspection revealed that 11ty also checked all of my boxes above, so I figured this is as good a time as any to give it a go.</p>
 <p>There's actually a fairly good number of pre-made 11ty templates available for something like this. They're definitely worth checking out and will likely give you a nice running start.</p>
-<p>For the sake of curiosity, this blog was set up from the scratch, following resources I've scrambled together from the web.</p>
+<p>For the sake of curiosity, this blog was built from the ground scratch, following resources I've scrambled together from the web.</p>
 <h2>An overview</h2>
 <p>It should be noted that I don't have a lot of experience dealing with similar blogging platforms so consider these notes against that background!</p>
 <p>Low-dashed data-folders folders can be a bit confusing to deal with at first I guess. These are used to provide stuff like extra-data or templates to the 11ty-build.</p>
 <h3>Layouts</h3>
 <p>Layouting itself is done using liquid templates people might be familiar with from Jekyll. 11ty actually supports several different templating languages and I mostly went with liquid due to the perceived simplicity.</p>
+<h3>Assets</h3>
+<p>Since I'd like to see some custom styles and fonts on this blog, asset-management became a valid question quite soon. This brings us to doing a bit of customization on our 11ty-site. So let's jump into the wonderful world of configuration next.</p>
 <h3>Configuration</h3>
 <p><code>.eleventy.js</code> file is your go to file to setting up configuration options for your 11ty setup. This optional file might be used to set up special handling for different kinds of files and folders. You might also use it to reconfigure some of the defaults used by the build tool.</p>
-<p>We'll be looking at the simplest possible configuration in the next section.</p>
-<h3>Assets</h3>
-<p>Setting up asset building proved to be a relatively straight-forward task.</p>
-<p>The following snippet is an example of my original <code>.eleventy.js</code> set-up. The eleventyConfig received as a parameter provides a bunch of different methods to include extra functionality to your 11ty-configuration.</p>
+<p>The eleventyConfig received as a parameter provides a bunch of different methods to include extra functionality to your 11ty-configuration.</p>
+<p>The following snippet is an example of my original <code>.eleventy.js</code> set-up. Providing functionality for passing assets forward.</p>
 <pre><code class="language-javascript">module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('assets');
 };
 </code></pre>
+<p>Besides the methods available to us on the <code>eleventyConfig</code> parameter, we can also extend our code</p>
 <h3>Code-highlighting</h3>
 <p>I figured out this is something I can set up later, so the initial implementation includes simple handling for inline-code and code-blocks.</p>
 <h2>Challenges and wins</h2>
@@ -73,7 +80,10 @@
 <p>It's pretty refreshing to mainly concern yourself with the css and html side of things. This blog does not need to concern itself with a state or rendering issues, everything we have here is provided in static resources.</p>
 <p><code>CSS-variables</code> are the bees knees.</p>
 <h3>Challenges</h3>
-<p>An unexpected brain-teaser caught this JavaScript developers by surprise, how do I format the datetimes for my posts in the fashion I want.</p>
+<ul>
+<li>Splitting template contents correctly</li>
+<li>Formatting dates</li>
+</ul>
 <h2>Sum up</h2>
 
       </article>
