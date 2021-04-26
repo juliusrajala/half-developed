@@ -29,3 +29,10 @@ I enjoy hand-craft websites, beers and bicycles. I've also been dreaming about g
   <img src="/assets/lore.png" alt="Julius Rajala" />
 </div>
 
+### Get in touch
+
+It's easiest to get in touch with me through Twitter, or connecting on LinkedIn.
+
+- 🧑‍💻 [github.com/juliusrajala](https://github.com/juliusrajala)
+- 🦉 [twitter.com/RajalaJulius](https://twitter.com/RajalaJulius)
+- 🖇 [linkedin.com/in/juliusrajala](https://linkedin.com/in/juliusrajala/)
