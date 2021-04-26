@@ -2,13 +2,12 @@
 <html lang="en">
 
 <head>
-  <title>{{icon}} {{title}}</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Halfdeveloped: {{title}}</title>
   <link rel="stylesheet" type="text/css" href="/css/reset.css">
   <link rel="stylesheet" type="text/css" href="/css/defaults.css">
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
-  <link rel="stylesheet" type="text/css" href="/css/blog.css">
 </head>
 
 <body>
@@ -18,18 +17,20 @@
       {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
     </nav>
   </header>
+
   <main>
     <section>
-      <div class="hdcom-postHeader">
-        <h1>{{title}}</h1>
-      </div>
-      <div class="hdcom-postMeta">
-        <span>🗓 {{date | dateReadable }}</span>
-        <!-- <span>⌨️ {{ author }}</span> -->
-      </div>
-      <article>
-        {{ content }}
-      </article>
+      {{ content }}
+    </section>
+    <section>
+      <h2>Relevant posts</h2>
+      <ul>
+        {%- for post in collections.highlight -%}
+        <li>
+          <a href="{{ post.url | url }}"> {{ post.data.title }}</a>
+        </li>
+        {%- endfor -%}
+      </ul>
     </section>
   </main>
   <footer>

@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
+  <title>🛠 Setting up a blog-site using 11ty, first impressions</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🛠 Setting up a blog-site using 11ty, first impressions</title>
   <link rel="stylesheet" type="text/css" href="/css/reset.css">
   <link rel="stylesheet" type="text/css" href="/css/defaults.css">
   <link rel="stylesheet" type="text/css" href="/css/styles.css">
@@ -27,12 +27,15 @@
       </div>
       <div class="hdcom-postMeta">
         <span>🗓 23.04.2021</span>
-        <span>⌨️ Julius Rajala</span>
+        <!-- <span>⌨️ Julius Rajala</span> -->
       </div>
       <article>
         <p>Every now and then I get this weird need to set myself up with a blog.</p>
-<p>I've always been somewhat interested in writing. Especially about technology. I just never seem to get around to actually doing it. One of the things standing in my way has been the lack of a site suited for it.</p>
-<p>No, there's no sudden shortage of blogging platforms. As a software engineer, re-inventing the wheel is part, if not all of the fun though, hence I'll steer away from the WordPress-sites and whatnots. I'm sure they're decent platforms though.</p>
+<p>I've always been somewhat interested in writing. Especially about technology. I just never seem to get around to actually doing it. One of the things standing in my way has been the lack of a website suited for it.</p>
+<p>I had a bit of time in my hands this weekend and decided I'd fix the situation for myself. I'd build my own blog.</p>
+<p>Why would you build it one yourself though? There's no sudden shortage of blogging platforms.</p>
+<p>Re-inventing the wheel can sometimes be a lot of fun though and provide you with an opportunity to learn things. A practise much appreciated by many software engineers.</p>
+<p>As such, I decided to steer away from the WordPress-sites and what-nots. This post is a look into the writing process.</p>
 <h2>Choice of technology</h2>
 <p>Picking a technology for your site these days is like going to the candy store. There's a lot of options.</p>
 <p>I gathered together a list of some of the requirements I had with regards to the technologies used.</p>
@@ -49,7 +52,8 @@
 <li>Low amount of JavaScript <em>(That I need to write)</em></li>
 </ul>
 <p>With these specs at hand, I set out to find me the perfect technology for this site.</p>
-<p>I made a conscious decisions to avoid the technologies of the React-verse. Not that there's anything wrong with Gatsby or Next for instance. I've worked with different React-variants and applications over the last few years and enjoy any refreshments I can get from the world of <code>JSX</code>.</p>
+<p>I made a conscious decisions to avoid the technologies of the React-verse. Not that there's anything wrong with Gatsby or Next for instance.</p>
+<p>I've worked with different React-variants and applications over the last few years and enjoy any refreshments I can get from the world of <code>JSX</code>.</p>
 <h3>Enter 11ty</h3>
 <p>Following the twitter tech-sphere, I've happened upon this neat little build tool called <a href="https://www.11ty.dev">11ty</a> quite a few times as of late, so I figured it's worth a look.</p>
 <p>A short inspection revealed that 11ty also checked all of my boxes above, so I figured this is as good a time as any to give it a go.</p>
@@ -81,14 +85,19 @@
 <p><code>CSS-variables</code> are the bees knees.</p>
 <h3>Challenges</h3>
 <ul>
-<li>Splitting template contents correctly</li>
-<li>Formatting dates</li>
+<li>Providing good defaults for values for the blog-posts</li>
+<li>Text formatting for legibility</li>
 </ul>
 <h2>Sum up</h2>
+<p>Setting up a blog with 11ty was a relatively straightforward process. I really enjoy the snappy use developer-experience it provides. The build tool is fast and things are relatively easy to figure out.</p>
+<p>Check out the source code for this repository at <a href="https://github.com/juliusrajala/half-developed">Github</a>.</p>
 
       </article>
     </section>
   </main>
+  <footer>
+    Julius Rajala, 2021
+  </footer>
 </body>
 
 </html>

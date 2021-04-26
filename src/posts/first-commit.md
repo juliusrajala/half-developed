@@ -1,17 +1,24 @@
 ---
 layout: layouts/post.liquid
 date: 2021-04-23
-tags: ['post']
+tags: ['post', 'highlight']
 icon: 🛠
 author: Julius Rajala
 title: Setting up a blog-site using 11ty, first impressions
 ---
 
+
 Every now and then I get this weird need to set myself up with a blog.
 
-I've always been somewhat interested in writing. Especially about technology. I just never seem to get around to actually doing it. One of the things standing in my way has been the lack of a site suited for it.
+I've always been somewhat interested in writing. Especially about technology. I just never seem to get around to actually doing it. One of the things standing in my way has been the lack of a website suited for it.
 
-No, there's no sudden shortage of blogging platforms. As a software engineer, re-inventing the wheel is part, if not all of the fun though, hence I'll steer away from the WordPress-sites and whatnots. I'm sure they're decent platforms though.
+I had a bit of time in my hands this weekend and decided I'd fix the situation for myself. I'd build my own blog.
+
+Why would you build it one yourself though? There's no sudden shortage of blogging platforms.
+
+Re-inventing the wheel can sometimes be a lot of fun though and provide you with an opportunity to learn things. A practise much appreciated by many software engineers.
+
+As such, I decided to steer away from the WordPress-sites and what-nots. This post is a look into the writing process.
 
 ## Choice of technology
 
@@ -30,7 +37,9 @@ I gathered together a list of some of the requirements I had with regards to the
 
 With these specs at hand, I set out to find me the perfect technology for this site.
 
-I made a conscious decisions to avoid the technologies of the React-verse. Not that there's anything wrong with Gatsby or Next for instance. I've worked with different React-variants and applications over the last few years and enjoy any refreshments I can get from the world of `JSX`.
+I made a conscious decisions to avoid the technologies of the React-verse. Not that there's anything wrong with Gatsby or Next for instance.
+
+I've worked with different React-variants and applications over the last few years and enjoy any refreshments I can get from the world of `JSX`.
 
 ### Enter 11ty
 
@@ -91,9 +100,11 @@ It's pretty refreshing to mainly concern yourself with the css and html side of 
 
 ### Challenges
 
-- Splitting template contents correctly
-- Formatting dates
+- Providing good defaults for values for the blog-posts
+- Text formatting for legibility
 
 ## Sum up
 
+Setting up a blog with 11ty was a relatively straightforward process. I really enjoy the snappy use developer-experience it provides. The build tool is fast and things are relatively easy to figure out.
 
+Check out the source code for this repository at [Github](https://github.com/juliusrajala/half-developed).
