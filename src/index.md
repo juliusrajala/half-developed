@@ -7,12 +7,12 @@ eleventyNavigation:
 
 ---
 
-# Welcome to half-developed
+# Welcome to Half-developed
 
 A technology blog exploring unfinished projects, css, TypeScript and other topics of occasional interest.
 
 Source code available on [Github](https://github.com/juliusrajala/half-developed).
 
-> Well designed is half-developed. <br><em>Bastardized Finnish proverb</em>
+> Something well designed is half-developed. <br><em>Bastardized Finnish proverb</em>
 
 Updated occasionally on inspiration of writing things.

@@ -7,6 +7,6 @@ eleventyNavigation:
 collections:
 ---
 
-# Explore posts on Half-Developed
+# Explore posts on Half-developed
 
 A tech blog exploring web-things, unfinished projects and other topics of interest.
