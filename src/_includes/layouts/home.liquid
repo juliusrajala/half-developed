@@ -21,17 +21,23 @@
 
   <main>
     <section>
-      {{ content }}
+      <h3>Recent posts</h3>
+      <div style="display:flex; align-items: flex-start; flex-direction: row; margin: 2rem 0rem;">
+        <img src="/assets/lore.png" alt="Julius Rajala"
+          style="width: 80px;height:80px; border-radius: 100%;margin-right: 2rem;" />
+        <ul>
+          {%- for post in collections.highlight -%}
+          <li>
+            <a href="{{ post.url | url }}">{{post.data.icon}} {{ post.data.title }}</a>
+          </li>
+          {%- endfor -%}
+        </ul>
+      </div>
+
     </section>
+
     <section>
-      <h2>Relevant posts</h2>
-      <ul>
-        {%- for post in collections.highlight -%}
-        <li>
-          <a href="{{ post.url | url }}"> {{ post.data.title }}</a>
-        </li>
-        {%- endfor -%}
-      </ul>
+      {{ content }}
     </section>
   </main>
   <footer>

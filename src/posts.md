@@ -9,4 +9,4 @@ collections:
 
 # Explore posts on Half-developed
 
-A tech blog exploring web-things, unfinished projects and other topics of interest.
+The front-page features only a few of the most recent posts, you can find the all posts from this page.
