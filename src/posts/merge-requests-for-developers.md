@@ -32,17 +32,19 @@ Feel free to use this document when discussing pull requests with your team.
 
 In this short guide, we'll roughly look at the process of code reviews and pull requests in three parts.
 
-1. Creating the pull request
+1. Creating a pull request
 2. Reviewing a pull request
 3. Receiving a code review on your request
 
+## 1. Creating a pull request
 
-## 1. Creating Pull requests
+The process of creating pull requests is often overlooked in posts considering the process of code reviews. I feel its fair to discuss this topic as well. Keeping thought in the process of creating your pull request makes the process smoother for everyone.
 
 - Consider your reviewer. It can be rough to receive a pull request the length of a short novel. Doing your best to split your reviewable code into chunks makes the process easier for everyone involved.
 - In the case your code includes a break in convention, something curious or different requiring an explanation do your best to leave a meaningful comment explaining why.
 - Pointing out issues you might have encountered in your implementation, possible bottlenecks for the future or other technical issues related to to the implementation can be very beneficial for the future.
 - When working on frontend features, providing a gif or an image of the feature in question goes a long way and helps pin-point the changes in question.
+- Depending on the system you use to keep track of your issues, linking the related issue on Jira/Github/Etc can get you a long way. In fact, it can often be all you need to provide context for your pull request.
 - Remember to ask for reviews, don't assume them to happen. Nobody likes a stale pull request.
 
 ## 2. Writing a code review
