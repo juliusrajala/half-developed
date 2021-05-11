@@ -78,12 +78,17 @@ p {
 
 ul, ol {
   font-size: 1.1rem;
-  line-height: 1.8;
+  line-height: 1.6;
   list-style: initial;
-  list-style-position: inside;
+  list-style-position: outside;
   font-family: 'Space Grotesk', sans-serif;
   margin-bottom: 1rem;
   letter-spacing: .03em;
+  margin-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
 }
 
 li > ul {

@@ -3,8 +3,12 @@
 }
 
 .hdcom-postMeta > span {
-  margin-right: 1rem;
+  margin-right: 2rem;
   font-family: var(--font-sans-bold);
+}
+
+.hdcom-postMeta > span > i {
+  margin-right: 0.5rem;
 }
 
 .hdcom-postHeader {

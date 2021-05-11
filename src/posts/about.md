@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.liquid
-title: Most of my projects only get half-developed or less
+title: About - Most of my hobby projects only get half-developed
 tags: ['highlight', 'post']
 date: 2021-05-07
 icon: 🧑‍💻
@@ -9,7 +9,7 @@ eleventyNavigation:
   order: 3
 ---
 
-The title speaks for itself. Half-developed is software engineering blog exploring some of my hobby-projects in various web technologies and the accumulated learnings and thouthts.
+The title speaks for itself. Half-developed is software engineering blog exploring some of my hobby-projects in various web technologies and the accumulated learnings and thoughts.
 
 ## Half-developed
 
