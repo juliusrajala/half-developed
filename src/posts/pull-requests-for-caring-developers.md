@@ -73,17 +73,17 @@ This section is largely subjective and dependent on the team an their set of rul
 
 ### Issues of objective quality
 
-- Performance issues, memory leaks.
-- Code cluttered with comments.
-- Security issues
+It might make sense to create a shared set of rules for your team on what matters you focus on in your code reviews.
+
+These issues may include but not be limited to:
+
+- Performance or security issues.
+- Dead code.
+- Breaking of conventions.
+- Maintainability of the code.
 - **Issues agreed upon by the team.**
 
-### Issues of subjective quality
-
-- "Needless duplication"
-- Naming conventions
-- Variabilization (Not sure if this is a word)
-- **Issues undecided on by the team.**
+I won't try to point out everything you might want to take into account in your process. I believe what matters the most, is that everyone is on the same page.
 
 ## Summary
 

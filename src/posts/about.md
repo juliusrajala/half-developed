@@ -3,6 +3,7 @@ layout: layouts/post.liquid
 title: About - Most of my hobby projects only get half-developed
 tags: ['highlight', 'post']
 date: 2021-05-07
+author: Julius Rajala
 icon: 🧑‍💻
 eleventyNavigation:
   key: About
