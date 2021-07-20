@@ -6,7 +6,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy('src/css/');
 
   eleventyConfig.addFilter('dateReadable', date => {
-    return new Date(date).toLocaleDateString().split('/').join('.')
+    return new Date(date).toLocaleDateString()
   })
 
   eleventyConfig.addFilter('buildDate', () => {

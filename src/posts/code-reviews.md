@@ -4,7 +4,7 @@ date: 2021-05-11
 tags: ['post', 'tip', 'highlight']
 icon: 😍
 author: Julius Rajala
-title: Pull Requests for the caring developer
+title: Code reviews for the caring developer
 ---
 
 I've actually written a couple of iterations of a similar document over the years. It always seems to take a slightly different form but some of the content remains.
@@ -17,9 +17,9 @@ I've heard negative thoughts on on the process from several developers, but the 
 
 ## Why code reviews might suck
 
-Miscommunication is often the root of all evil. Pull requests and code reviews are not exempt of the situation. When you approach the process, always keep in mind that communication is hard.
+While most developers I've discussed with agree that code reviews are generally positive. I've happened upon some bad earlier experiences as well. While nobody likes stale pull requests, some issues also come from negative feelings from the review process itself.
 
-Benefit of the doubt gets you a long way.
+This is often caused
 
 ### Common rules
 
@@ -27,16 +27,15 @@ Figuring out common rules for your teams process will get you a long way and hel
 
 Feel free to use this document when discussing pull requests with your team.
 
-
 ## On the process of code reviews
 
 In this short guide, we'll roughly look at the process of code reviews and pull requests in three parts.
 
-1. Creating a pull request
-2. Reviewing a pull request
+1. Submitting code for review
+2. Writing a code review
 3. Receiving a code review on your request
 
-## 1. Creating a pull request
+## 1. Submitting code for review
 
 The process of creating pull requests is often overlooked in posts considering the process of code reviews. I feel its fair to discuss this topic as well. Keeping thought in the process of creating your pull request makes the process smoother for everyone.
 
@@ -93,4 +92,4 @@ It's pretty easy to summarise all of this. I find that doing your best to keep t
 - Code reviews are about quality and shared ownership of the code.
 - Discuss and decide on a shared set of rules with your team.
 
-A lot of this is really pretty common sense stuff. Hopefully it'll still be of use to you.
+I hope you'll find something of use to you from this guide. In the end, teams are different and have their own approaches to different processes.

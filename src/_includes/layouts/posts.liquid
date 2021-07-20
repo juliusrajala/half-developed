@@ -27,7 +27,7 @@
       <ul>
         {%- for post in collections.post -%}
         <li>
-          <a href="{{ post.url | url }}">{{post.data.icon}} {{ post.data.title }}, {{post.date | dateReadable}}</a>
+          <a href="{{ post.url | url }}">{{post.date | dateReadable}}: {{post.data.icon}} {{ post.data.title }}</a>
         </li>
         {%- endfor -%}
       </ul>
