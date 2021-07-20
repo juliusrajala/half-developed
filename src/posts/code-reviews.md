@@ -15,11 +15,11 @@ Code reviews have been proven to raise the overall quality of the code, time and
 
 I've heard negative thoughts on on the process from several developers, but the issues seem to have been mainly rooted in to how the prcoess is done. Not why.
 
-## Why code reviews might suck
+## Why code reviews sometimes suck
 
-While most developers I've discussed with agree that code reviews are generally positive. I've happened upon some bad earlier experiences as well. While nobody likes stale pull requests, some issues also come from negative feelings from the review process itself.
+While the general concensus seems to be that code reviews are useful and necessary in order to delivery quality code, there are of course ways to make this process nasty for everyone.
 
-This is often caused
+Code reviews should be about delivery quality. Bringing in issues from outside of this context is hardly ever a really good idea.
 
 ### Common rules
 
